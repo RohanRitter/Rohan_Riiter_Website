@@ -2,9 +2,25 @@ body {
     margin: 0;
 }
 h1 {
-    
+    margin-top: 0;
 }
 
-div {
+
+/* //////////////Classes///////////////// */
+.top-container {
     background-color: #2E2E2E;
+}
+.middle-container {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+
+}
+.bottom-container {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+.pro {
+    text-decoration: underline;
 }
