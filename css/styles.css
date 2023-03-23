@@ -2,26 +2,26 @@ body {
     margin: 0;
     text-align: center;
     font-family: 'Kanit', sans-serif;
-    font-size: 150%;
+    font-size: 25px;
 }
 h1 {
     color: #222831;
     font-size: 5.5rem;
+    line-height: 2;
     margin: 50px auto 0px auto;
     font-family: 'Tinos', serif;
 }
 
 h2 {
     color: #222831;
-    margin-top: 0;
+    line-height: 3;
     font-family: 'Adamina', serif;
-    font-size: 1.3rem;
-
+    font-size: 2.3rem;
+    font-weight: normal;
 }
 
 h3 {
     color: #222831;
-    margin-top: 0;
     font-family: 'Adamina', serif;
 
 }
@@ -34,11 +34,7 @@ h3 {
     position: relative;
     padding-top: 100px;
 }
-.middle-container {
-}
 
-.bottom-container {
-}
 .pro {
     text-decoration: underline;
 }
@@ -58,9 +54,20 @@ h3 {
 .oasis {
     margin: 0px auto 0px auto;
 }
+.skill-row {
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    line-height: 1;
+}
 .skillsimg {
+    width: 25%;
     -webkit-transform: scaleY(-1);
-  transform: scaleY(-1);
+    transform: scaleY(-1);
+}
+
+.educationimg {
+    width: 25%;
 }
 
 .circular {
