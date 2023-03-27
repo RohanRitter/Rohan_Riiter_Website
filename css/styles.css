@@ -1,8 +1,9 @@
 body {
     margin: 0;
+    color: #050505;
     text-align: center;
     font-family: 'Kanit', sans-serif;
-    font-size: 25px;
+    font-size: 1.3rem;
 }
 h1 {
     color: #222831;
@@ -14,18 +15,28 @@ h1 {
 
 h2 {
     color: #222831;
-    line-height: 3;
+    line-height: 1;
     font-family: 'Adamina', serif;
     font-size: 2.3rem;
     font-weight: normal;
+    padding-bottom: 10px;
 }
 
 h3 {
     color: #222831;
     font-family: 'Adamina', serif;
-
 }
 
+p {
+    line-height: 1.5;
+}
+
+hr {
+    border:double #00ADB5 6px;
+    border-bottom: none;
+
+    width: 60%;
+}
 
 /* //////////////Classes///////////////// */
 
@@ -34,15 +45,22 @@ h3 {
     position: relative;
     padding-top: 100px;
 }
+.middle-container {
+    margin: 50px 0;
+}
 
 .pro {
     text-decoration: underline;
+}
+.intro {
+    width: 30%;
+    margin: auto;
 }
 
 .bottom-cloud {
     position: absolute;
     top: 300px;
-    left: 300px;
+    left: 200px;
 }
 
 .top-cloud {
@@ -58,16 +76,23 @@ h3 {
     width: 50%;
     margin: 100px auto 100px auto;
     text-align: left;
-    line-height: 1;
 }
+
 .skillsimg {
     width: 25%;
     -webkit-transform: scaleY(-1);
     transform: scaleY(-1);
+    float: left;
+    margin-right: 30px;
 }
 
 .educationimg {
     width: 25%;
+    float: right;
+    margin-left: 30px;
+}
+.hrclear {
+    clear: right;
 }
 
 .circular {
