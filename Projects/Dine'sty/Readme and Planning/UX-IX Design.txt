@@ -1,0 +1,94 @@
+V0.1
+Raw HTML Code
+No CSS
+/////////////////////////////////////////////////
+V0.2
+
+Dine'sty Landing Page
+
+Colours:
+Black 
+Background -  Off White
+#F5F5F5
+Font - Wine Red Loks bad might have to change the idea for a red Font colour
+#810000
+Touch of Green trees from designs will use images 
+#54B435
+
+
+Font 
+//////////////////////////////////////////////
+
+
+There are 5 Pages in total
+Landing Page with all the content
+Add Restuant Page 
+Add Wine Farm Page
+Submit a Restaurnt or Wine State Page
+Contact Page
+
+
+//////////////////////////////////////////
+Landing Page
+Top
+Company Name Top 
+Navigation Bar
+
+Middle
+Welcome and goal of Dine'sty
+
+Quote or Verse of the day, this will be random from a array:
+Array for Quote 
+Array for Verse/Name
+
+Bottom
+Links to my page etc. 
+
+
+
+/////////////////////////////////////// Page 2
+Resurant Pages
+Top
+Company Name Top 
+Navigation Bar
+
+Filter Sysytem
+Restuarnts Lists (Cards)
+
+
+Bottom
+Links to my page etc. 
+
+
+//////////////////////////////////////// Page 3
+Wine Page
+Top
+Company Name Top 
+Navigation Bar
+
+Filter Sysytem
+Estates Lists (Cards)
+
+Bottom
+Links to my page etc. 
+
+
+//////////////////////////////////////////Page 4
+Submit a Restaurnt or Wine State Page
+Top
+Company Name Top 
+Navigation Bar
+
+
+
+
+Submit a Restaurnt or Wine State Page 
+Under Construction for Self adding 
+
+
+
+
+Bottom
+Links to my page etc. 
+
+

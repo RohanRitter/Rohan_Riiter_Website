@@ -1,0 +1,26 @@
+body {
+    color: #810000;
+}
+
+.c-text {
+  color: white;
+  text-shadow: 1px 1px 2px #810000;
+}
+
+
+.equal-image-size {
+    width: auto; /* Adjust this value as needed */
+    height: 500px; /* Adjust this value as needed */
+  }
+
+  carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Adjust as needed */
+  }
+
+
+  carousel-inner {
+    text-align: center;
+  }

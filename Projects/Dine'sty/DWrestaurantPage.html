@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wine Estates</title>
+    <!-- CSS links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">    
+    <link rel="stylesheet" href="./Styles/DWstyles.css">
+    
+    <!-- Font links -->
+</head>
+<body>
+    <!-- Carousel -->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" data-bs-touch="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="1000">
+            <img src="./Images/Restaurant-Images/Restauant-Carousel/1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-sm-block">
+              <h1 class = "c-text">Restaurants</h1>
+              <h3 class = "c-text">"Delight in Every Bite: A Taste of Fresh Adventure!"</h3>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="./Images/Restaurant-Images/Restauant-Carousel/2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-sm-block">
+              <h1 class = "c-text">Restaurants</h1>
+              <h3 class = "c-text">"Savor the Flavor: Where Taste Takes the Lead!"</h3>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="./Images/Restaurant-Images/Restauant-Carousel/3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-sm-block">
+              <h1 class = "c-text">Restaurants</h1>
+              <h3 class = "c-text">"Lunchtime Bliss: Elevating Your Culinary Experience."</h3>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="./Images/Restaurant-Images/Restauant-Carousel/4.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-sm-block">
+              <h1 class = "c-text">Restaurants</h1>
+              <h3 class = "c-text">"Lunch Reimagined: Where Every Bite Tells a Story."</h3>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="./Images/Restaurant-Images/Restauant-Carousel/5.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-sm-block">
+              <h1 class = "c-text">Restaurants</h1>
+              <h3 class = "c-text">"Crafting Noon Delights: One Plate at a Time."</h3>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="./Images/Restaurant-Images/Restauant-Carousel/6.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-sm-block">
+              <h1 class = "c-text">Restaurants</h1>
+              <h3 class = "c-text">"Nourishing Breaks: Wholesome Lunches, Happy Moments."</h3>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="./Images/Restaurant-Images/Restauant-Carousel/7.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-sm-block">
+              <h1 class = "c-text">Restaurants</h1>
+              <h3 class = "c-text">"Lunching Beyond Expectations: Where Every Dish Shines."</h3>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="./Images/Restaurant-Images/Restauant-Carousel/8.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-sm-block">
+              <h1 class = "c-text">Restaurants</h1>
+              <h3 class = "c-text">"Feeding Your Noon Cravings: Taste the Difference!"</h3>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+    
+    <div class="container">
+      <div class="row">
+      <!-- Cards -->
+      <div class="row" id="myItems">
+        <div class="row">
+          <!-- Filter -->
+          <div class="col-sm-12 mb-3">
+            <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()" placeholder="Search for names..">
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="card">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              <div class="card-body">
+                <h5 class = "card-title">Hussar Grill</h5>
+                <p class="card-text">Pairing a steak with Hussar Grill famous red wine(D'Aria) you will have a meal to remember.</p>
+                <p class="card-text">Pros: Steaks</p>
+                <p class="card-text">Cons: Can be expensive</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="https://www.hussargrill.co.za/" class="btn btn-sm btn-outline-secondary" role="button" aria-pressed="true">View</a>
+                    <a href="https://www.google.com/maps/search/hussar+grill/@" class="btn btn-sm btn-outline-secondary" role="button" aria-pressed="true">Location</a>
+                  </div>
+                  <small class="text-body-secondary">⭐⭐⭐⭐</small>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="card">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              <div class="card-body">
+                <h5 class = "card-title">MacDonalds</h5>
+                <p class="card-text">Its MacDs, what else?</p>
+                <p class="card-text">Pros: Milkshakes, Ice Coffe, Sunday</p>
+                <p class="card-text">Cons: Nothing to report</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="https://www.mcdonalds.co.za/" class="btn btn-sm btn-outline-secondary" role="button" aria-pressed="true">View</a>
+                    <a href="https://www.google.com/maps/search/McDonald's/" class="btn btn-sm btn-outline-secondary" role="button" aria-pressed="true">Location</a>
+                  </div>
+                  <small class="text-body-secondary">⭐⭐⭐⭐</small>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="card">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              <div class="card-body">
+                <h5 class = "card-title">Rocomamas</h5>
+                <p class="card-text">You go for the Freak Shakes but stay for the burgers, bombs and breafest special. They have jenga while you wait for your food.</p>
+                <p class="card-text">Pros: Combo Burgers and Bombs</p>
+                <p class="card-text">Cons: Expensive</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="https://www.rocomamas.com/za/" class="btn btn-sm btn-outline-secondary" role="button" aria-pressed="true">View</a>
+                    <a href="https://www.google.com/maps/search/rocomamas/" class="btn btn-sm btn-outline-secondary" role="button" aria-pressed="true">Location</a>
+                  </div>
+                  <small class="text-body-secondary">⭐⭐⭐⭐</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    <a style="color:#810000;" class="nav-link fw-semibold" href="./DWindex.html">Home</a>
+
+    <!-- Java Script from Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="./index.js" charset="utf-8"></script>
+  </body>
+</html>
