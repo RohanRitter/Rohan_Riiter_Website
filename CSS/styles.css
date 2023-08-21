@@ -22,3 +22,14 @@
     height: auto;
   
   }
+
+
+  .carousel {
+    position: relative; /* Ensure the carousel is relatively positioned */
+  }
+  
+  .carousel-button {
+    position: absolute;
+    bottom: 0px; /* Adjust the value as needed */
+    right: 0px; /* Adjust the value as needed */
+  }
