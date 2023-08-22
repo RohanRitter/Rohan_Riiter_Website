@@ -22,3 +22,12 @@ if (randomNumber1 > randomNumber2) {
 } else { 
     document.querySelector("h1").innerHTML = "We have a Draw, Try again!";
 }
+
+// Refresh Page button
+document.addEventListener("DOMContentLoaded", function() {
+    var refreshText = document.getElementById("refresh");
+  
+    refreshText.addEventListener("click", function() {
+      location.reload();
+    });
+  });
