@@ -1,0 +1,257 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Blog</title>
+<!--	Fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link href="styles.css" rel="stylesheet" type="text/css">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-image: url('images/BlogBG.png');
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+		}
+		.container {
+			flex-direction: column;
+		}
+		.content {
+			display: flex;
+			align-content: center;
+		}
+
+		.button-bar {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			padding: 0 20px;
+		}
+		.content-item {
+			display: none;
+		}
+
+		.content-item.active {
+			display: block;
+		}
+		.button-Previous, .button-Next {
+			margin: 20px;
+			background-color: #000435;
+			color: white;
+			border-style: none;
+			font-size: 20px;
+			padding: 10px;
+			border-radius: 10px;
+			width: 100px;
+		}
+		.button-Previous:hover, .button-Next:hover {
+			text-decoration: underline;
+			cursor: pointer;
+		}
+
+/*		Mobile Devices*/
+		@media screen and (max-width: 600px) {
+			.content-item {
+				width: 100%;
+			}
+			.button-bar { 
+				justify-content: space-evenly;
+				padding: 0;
+			}
+			.button-Previous, .button-Next {
+				margin-bottom: 10px;
+				background-color: #000435;
+				color: white;
+				border-style: none;
+				font-size: 20px;
+				padding: 10px;
+				border-radius: 10px;
+				width: 100px;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+	  <nav class="secondary_header" id="menu">
+		  <ul>
+			<li><a href="./Projects.html">Projects</a></li>
+			<li><a href="./About.html">About</a></li>
+			<li><a href="./Blog.html">Blog</a></li>
+			<li><a href="./Contact.html">Contact</a></li>
+		  </ul>
+	  </nav>
+		<div class="primary_header">
+		  <a href="./index.html" class="center-link"><img class="home-image" src="images/Navbar.png" alt="Home"></a>
+	</div>
+	</header>
+	<main class="container">
+		<h1 class="title">Blog</h1>
+		<div class="content">
+			<div class="content-item active">
+				<div class="content-info">
+					<h2>Battle of Trafalgar (1805)</h2>
+					<p>The Battle of Trafalgar was a naval engagement that took place on 21 October 1805 between the British Royal Navy and the combined fleets of the French and Spanish Navies during the War of the Third Coalition (August–December 1805) of the Napoleonic Wars (1803–1815).</p>
+					<p>As part of Napoleon's plans to invade the United Kingdom, the French and Spanish fleets combined to take control of the English Channel and provide the Grande Armée safe passage. The allied fleet, under the command of the French admiral, Pierre-Charles Villeneuve, sailed from the port of Cádiz in the south of Spain on 18 October 1805. They encountered the British fleet under Lord Nelson, recently assembled to meet this threat, in the Atlantic Ocean along the southwest coast of Spain, off Cape Trafalgar.</p>
+					<p>Nelson was outnumbered, with 27 British ships of the line to 33 allied ships including the largest warship in either fleet, the Spanish Santísima Trinidad. To address this imbalance, Nelson sailed his fleet directly at the allied battle line's flank, hoping to break the line into pieces. Villeneuve had worried that Nelson might attempt this tactic, but for various reasons, failed to prepare for it. The plan worked almost perfectly; Nelson's columns split the Franco-Spanish fleet in three, isolating the rear half from Villeneuve's flag aboard Bucentaure. The allied vanguard sailed off while it attempted to turn around, giving the British temporary superiority over the remainder of their fleet. In the ensuing fierce battle 20 allied ships were lost, while the British lost none.</p>
+					<p>The offensive exposed the leading British ships to intense crossfire as they approached the Franco-Spanish lines. Nelson's own HMS Victory led the front column and was almost knocked out of action. Nelson was shot by a French musketeer during the battle, and died shortly before it ended. Villeneuve was captured along with his flagship Bucentaure. He attended Nelson's funeral while a captive on parole in Britain. The senior Spanish fleet officer, Admiral Federico Gravina, escaped with the surviving third of the Franco-Spanish fleet; he died five months later of wounds sustained during the battle.</p>
+					<p>The victory confirmed British naval supremacy, and was achieved in part through Nelson's departure from prevailing naval tactical orthodoxy.</p>
+					<p><i>Content for the Battle of Trafalgar was sourced from Wikipedia. Read more <a href="https://en.wikipedia.org/wiki/Battle_of_Trafalgar" target="_blank">here</a>.</i></p>
+			  </div>
+			</div>
+			<div class="content-item">
+				<div class="content-info">
+				  <h2>Battle of the Chesapeake (1781)</h2>
+					<p>The Battle of the Chesapeake, also known as the Battle of the Virginia Capes or simply the Battle of the Capes, was a crucial naval battle in the American Revolutionary War that took place near the mouth of the Chesapeake Bay on 5 September 1781. The combatants were a British fleet led by Rear Admiral Sir Thomas Graves and a French fleet led by Rear Admiral François Joseph Paul, the Comte de Grasse. The battle was strategically decisive, in that it prevented the Royal Navy from reinforcing or evacuating the besieged forces of Lieutenant General Lord Cornwallis at Yorktown, Virginia. The French were able to achieve control of the sea lanes against the British and provided the Franco-American army with siege artillery and French reinforcements. These proved decisive in the Siege of Yorktown, effectively securing independence for the Thirteen Colonies.</p>
+					<p>Admiral de Grasse had the option to attack British forces in either New York or Virginia; he opted for Virginia, arriving at the Chesapeake at the end of August. Admiral Graves learned that de Grasse had sailed from the West Indies for North America and that French Admiral de Barras had also sailed from Newport, Rhode Island. He concluded that they were going to join forces at the Chesapeake. He sailed south from Sandy Hook, New Jersey, outside New York Harbor, with 19 ships of the line and arrived at the mouth of the Chesapeake early on 5 September to see de Grasse's fleet already at anchor in the bay. De Grasse hastily prepared most of his fleet for battle—24 ships of the line—and sailed out to meet him. The two-hour engagement took place after hours of maneuvering. The lines of the two fleets did not completely meet; only the forward and center sections fully engaged. The battle was consequently fairly evenly matched, although the British suffered more casualties and ship damage, and it broke off when the sun set. The British tactics have been a subject of debate ever since.</p>
+					<p>The two fleets sailed within view of each other for several days, but de Grasse preferred to lure the British away from the bay where de Barras was expected to arrive carrying vital siege equipment. He broke away from the British on 13 September and returned to the Chesapeake, where de Barras had since arrived. Graves returned to New York to organize a larger relief effort; this did not sail until 19 October, two days after Cornwallis surrendered.</p>
+					<p>The Battle of the Chesapeake was a tactical victory for the French by no clearcut margin, but it was a strategic victory for the French and Americans that sealed the principal outcome of the war.</p>
+					<p><i>Content for the Battle of the Chesapeake was sourced from Wikipedia. Read more <a href="https://en.wikipedia.org/wiki/Battle_of_the_Chesapeake" target="_blank">here</a>.</i></p>
+			  </div>
+			</div>
+			<div class="content-item">
+				<div class="content-info">
+				  <h2>Battle of Vigo Bay (1702)</h2>
+					<p>The Battle of Vigo Bay, also known as the Battle of Rande (Galician: Batalla de Rande; Spanish: Batalla de Rande), was a naval engagement fought on 23 October 1702 during the opening years of the War of the Spanish Succession. The engagement followed an Anglo-Dutch attempt to capture the Spanish port of Cádiz in September in an effort to secure a naval base in the Iberian Peninsula. From this station the Allies had hoped to conduct operations in the western Mediterranean Sea, particularly against the French at Toulon. The amphibious assault, however, had proved a disaster, but as Admiral George Rooke retreated home in early October, he received news that the Spanish treasure fleet from America, laden with silver and merchandise, had entered Vigo Bay in northern Spain. Philips van Almonde convinced Rooke to attack the treasure ships, despite the lateness of the year and the fact that the vessels were protected by French ships-of-the-line.</p>
+					<p>The French and Spanish fleet sought safety behind a boom with twin batteries. However, Allied marines captured the harbour batteries while an Allied ship broke the boom. The main Anglo-Dutch fleet then attacked the outnumbered and immobilized French fleet. The French surrendered six ships-of-the-line, and others were destroyed.</p>
+					<p>The engagement was an overwhelming naval success for the Allies: the entire French escort fleet, under the command of Château-Renault, together with the Spanish galleons and transports under Manuel de Velasco, had either been captured or destroyed. Yet because most of the treasure had been off-loaded before the attack, capturing the bulk of the silver cargo had eluded Rooke. Nevertheless, the victory was a welcome boost to Allied morale and helped persuade the Portuguese King, Peter II, to abandon his earlier treaty with the French, and join the Grand Alliance.</p>
+					<p><i>Content for the Battle of Vigo Bay was sourced from Wikipedia. Read more <a href="https://en.wikipedia.org/wiki/Battle_of_Vigo_Bay" target="_blank">here</a>.</i></p>
+				</div>
+			</div>
+			<div class="content-item">
+				<div class="content-info">
+				  <h2>Battle of Barfleur and La Hougue (1692)</h2>
+					<p>The Battles of Barfleur and La Hougue took place during the Nine Years' War, between 19 May O.S. (29 May N.S.) and 4 June O.S. (14 June N.S.) 1692. The first was fought near Barfleur on 19 May O.S. (29 May N.S.), with later actions occurring between 20 May O.S. (30 May N.S.) and 4 June O.S. (14 June N.S.) at Cherbourg and Saint-Vaast-la-Hougue in Normandy, France.</p>
+					<p>The French attempt to restore James II to the English throne—the Williamite War in Ireland—ended in defeat in October 1691. Instead, a fleet of 44 ships of the line under Admiral de Tourville was to transport an invasion force commanded by Bernardin Gigault de Bellefonds. The Anglo-Dutch ships wintered in separate ports, and Tourville was ordered to put to sea as early as possible, hoping to intercept them before they could combine. However, when he finally did so in late May, the two fleets under Admiral Edward Russell had already met up and were 82 strong when they encountered the French off Cape Barfleur.</p>
+					<p>Following his instructions, Tourville attacked and inflicted numerous casualties to the Anglo-Dutch crews, but, after a clash that left many ships on both sides damaged, he ultimately disengaged. The Anglo-Dutch fleet pursued the outnumbered French into the harbours of Cherbourg and La Hougue, destroying a total of fifteen ships and ending the threat to England.</p>
+					<p><i>Content for the Battle of Barfleur and La Hougue was sourced from Wikipedia. Read more <a href="https://en.wikipedia.org/wiki/Battles_of_Barfleur_and_La_Hougue" target="_blank">here</a>.</i></p>
+				</div>
+			</div>
+			<div class="content-item">
+				<div class="content-info">
+				  <h2>Battle of Beachy Head (1690)</h2>
+					<p>The Battle of Beachy Head, also known as the Battle of Bévéziers, was a fleet action fought on 10 July 1690 during the Nine Years' War. The battle was the most significant French naval victory over their English and Dutch opponents during the war. The Dutch lost seven ships of the line and three fire ships; their English allies also lost one ship of the line, whereas the French did not lose a single vessel. Control of the English Channel temporarily fell into French hands but French Vice-Admiral Anne Hilarion de Tourville failed to pursue the Anglo-Dutch fleet with sufficient vigour, allowing it to fall back to the Thames.</p>
+					<p>Tourville was criticised for not following up his victory and was relieved of his command. Royal Navy Admiral Arthur Herbert, 1st Earl of Torrington, who had advised against engaging the superior French fleet but had been overruled by Queen Mary II of England and her ministers, was court-martialled for his performance during the battle. Although he was acquitted, King William III of England dismissed him from the service.</p>
+					<p><i>Content for the Battle of Beachy Head was sourced from Wikipedia. Read more <a href="https://en.wikipedia.org/wiki/Battle_of_Beachy_Head_(1690)" target="_blank">here</a>.</i></p>
+				</div>
+			</div>
+			<div class="content-item">
+				<div class="content-info">
+				  <h2>Four Days' Battle (1666)</h2>
+					<p>The Four Days' Battle was a naval engagement fought from 11 to 14 June 1666 (1–4 June O.S.) during the Second Anglo-Dutch War. It began off the Flemish coast and ended near the English coast, and remains one of the longest naval battles in history.</p>
+					<p>The Royal Navy suffered significant damage, losing around twenty ships in total. Casualties, including prisoners, exceeded 5,000 with over 1,000 men killed, including two vice-admirals, Sir Christopher Myngs and Sir William Berkeley. Almost 2,000 were taken prisoner including Vice-admiral George Ayscue.</p>
+					<p>Dutch losses were four ships destroyed by fire and over 2,000 men killed or wounded, among them Lieutenant Admiral Cornelis Evertsen, Vice Admiral Abraham van der Hulst and Rear Admiral Frederik Stachouwer. Although a clear Dutch victory, the surviving English ships were able to beat off an attempt to destroy them at anchor in the Thames estuary in early July. After quickly refitting, on 25 July the English defeated the Dutch in the St. James's Day Battle.</p>
+					<p><i>Content for the Four Days' Battle (1666) was sourced from Wikipedia. Read more <a href="https://en.wikipedia.org/wiki/Four_Days%27_Battle" target="_blank">here</a>.</i></p>
+				</div>
+			</div>
+			<div class="content-item">
+				<div class="content-info">
+				  <h2>Battle of the Downs (1639)</h2>
+					<p>The Battle of the Downs took place on 21 October 1639 (New Style), during the Eighty Years' War. A Spanish fleet, commanded by Admiral Antonio de Oquendo, was decisively defeated by a Dutch force under Lieutenant-Admiral Maarten Tromp. Victory ended Spanish efforts to re-assert naval control over the English Channel and confirmed Dutch dominance of the sea lanes, while it is also alleged to be the first major action to feature line of battle tactics.</p>
+					<p>The battle was initiated when Spanish chief minister Olivares sent a large convoy of troops and supplies for the Army of Flanders, escorted by some 50 warships. Since 1621, Spanish naval activity in the Channel had focused on avoiding direct conflict with the superior Dutch fleet, while attacking their merchant ships from bases in Dunkirk and Ostend. In a change from this policy, Oquendo was ordered to deliver the reinforcements but also bring the Dutch to battle; Olivares hoped victory would restore Spanish prestige and force the States General to negotiate peace terms.</p>
+					<p>The Spanish entered the Channel on 11 September and were intercepted by the Dutch in a series of actions between 16 and 18 September. Losses on both sides were minimal, but Oquendo took refuge in The Downs, an anchorage between the ports of Dover and Deal, where he was protected by English neutrality. Although blockaded here by the Dutch fleet, most of the reinforcements were transported to Dunkirk via small, fast frigates.</p>
+					<p>On 21 October, the Dutch entered the Downs and attacked the Spanish fleet with fireships. Unable to manoeuvre in the cramped waters and with the wind against them, the Spanish lost around ten ships captured or destroyed, while another twelve deliberately ran themselves ashore to avoid capture. Combined with the repulse of a similar-sized expedition against Dutch Brazil in January 1640, this marked the end of attempts to challenge Dutch maritime supremacy and an acceptance by the Spanish court that the war could not be won.</p>
+					<p><i>Content for the Battle of the Downs was sourced from Wikipedia. Read more <a href="https://en.wikipedia.org/wiki/Battle_of_the_Downs" target="_blank">here</a>.</i></p>
+				</div>
+			</div>
+			<div class="content-item">
+				<div class="content-info">
+				  <h2>Battle of Gibraltar (1607)</h2>
+					<p>The naval Battle of Gibraltar took place on 25 April 1607, during the Eighty Years' War, when a Dutch fleet surprised and engaged a Spanish fleet anchored at the Bay of Gibraltar. During the four hours of action, most of the Spanish ships were destroyed.</p>
+					<p>A Dutch fleet of 26 warships was led by Admiral Jacob van Heemskerk. The Dutch flagship was Æolus (of the Zeeland Admiralty). Other Dutch ships were De Roode Leeuw (also of the Zeeland Admiralty, and flagship of Vice-Admiral Laurens Jacobszoon Alteras), De Tijger (of the Maas Admiralty, and flagship of Rear-Admiral Lambert Hendrikszoon), De Zeehond, De Griffioen, De Gouden Leeuw, De Zwarte Beer, De Witte Beer, and De Ochtendster.</p>
+					<p>A Spanish fleet of 21 ships, including 10 galleons, was led by Don Juan Álvarez de Avilés. The Spanish flagship San Augustin was commanded by Don Juan's son. Other ships were Nuestra Señora de la Vega and Madre de Dios. The Spanish fleet was covered by a fortress, although the Dutch fleet was out of range of its guns at all times and the fortress guns were not able to affect the battle.</p>
+					<p>Van Heemskerk left some of his ships at the bay entrance to prevent the escape of any Spanish ships. Twenty from the Dutch fleet were ordered to focus on the Spanish galleons while the rest attacked the smaller vessels. Van Heemskerk was killed during the first approach on the Spanish flagship as a cannonball severed his leg. The Dutch then doubled up on the galleons and a few of the galleons caught fire. One exploded due to a shot that penetrated its powder magazine. The Dutch captured the Spanish flagship but let it go adrift.</p>
+					<p>Following the destruction of the Spanish ships, the Dutch deployed boats and killed hundreds of swimming Spanish sailors. The Dutch lost 100 men including Admiral Van Heemskerk. Sixty Dutch were wounded. Depending on the sources, most or all of the Spanish ships were lost and between 350 and 4,000 Spaniards were killed or captured. Álvarez de Avilés was amongst the dead.</p>
+					<p><i>Content for the Battle of Gibraltar (1607) was sourced from Wikipedia. Read more <a href="https://en.wikipedia.org/wiki/Battle_of_Gibraltar_(1607)" target="_blank">here</a>.</i></p>
+				</div>
+			</div>
+			<div class="content-item">
+				<div class="content-info">
+				  <h2>Spanish Armada (1588)</h2>
+					<p>The Spanish Armada (often known as Invincible Armada, or the Enterprise of England, Spanish: Grande y Felicísima Armada, lit. 'Great and Most Fortunate Navy') was a Spanish fleet that sailed from Lisbon in late May 1588, commanded by Alonso de Guzmán, Duke of Medina Sidonia, an aristocrat without previous naval experience appointed by Philip II of Spain. His orders were to sail up the English Channel, join with the Duke of Parma in Flanders, and escort an invasion force that would land in England and overthrow Elizabeth I. Its purpose was to reinstate Catholicism in England, end support for the Dutch Republic, and prevent attacks by English and Dutch privateers against Spanish interests in the Americas.</p>
+					<p>The Spanish were opposed by an English fleet based in Plymouth. Faster and more maneuverable than the larger Spanish galleons, its ships were able to attack the Armada as it sailed up the Channel. Several subordinates advised Medina Sidonia to anchor in the Solent and occupy the Isle of Wight, but he refused to deviate from his instructions to join with Parma. Although the Armada reached Calais largely intact, while awaiting communication from Parma, it was attacked at night by English fire ships and forced to scatter. The Armada suffered further losses in the ensuing Battle of Gravelines and was in danger of running aground on the Dutch coast when the wind changed, allowing it to escape into the North Sea. Pursued by the English, the Spanish ships returned home via Scotland and Ireland. Up to 24 ships were wrecked along the way before the rest managed to get home. Among the factors contributing to the defeat and withdrawal of the Armada were bad weather conditions and the better employment of naval guns and battle tactics by the English.</p>
+					<p>The expedition was the largest engagement of the undeclared Anglo-Spanish War. The following year, England organized a similar large-scale campaign against Spain, known as the "English Armada", and sometimes called the "counter-Armada of 1589", which failed. Three further Spanish armadas were sent against England and Ireland in 1596, 1597, and 1601, but these likewise ended in failure.</p>
+					<p><i>Content for the Spanish Armada (1588) was sourced from Wikipedia. Read more <a href="https://en.wikipedia.org/wiki/Spanish_Armada" target="_blank">here</a>.</i></p>
+				</div>
+			</div>
+			<div class="content-item">
+				<div class="content-info">
+				  <h2>Battle of Lepanto (1571)</h2>
+					<p>The Battle of Lepanto was a naval engagement that took place on 7 October 1571 when a fleet of the Holy League, a coalition of Catholic states arranged by Pope Pius V, inflicted a major defeat on the fleet of the Ottoman Empire in the Gulf of Patras. The Ottoman forces were sailing westward from their naval station in Lepanto (the Venetian name of ancient Naupactus – Greek Ναύπακτος, Turkish İnebahtı) when they met the fleet of the Holy League which was sailing east from Messina, Sicily.</p>
+					<p>The fleet of the Holy League consisted of 109 galleys and six galleasses from the Republic of Venice, 49 galleys from the Spanish Empire, 27 galleys from the Republic of Genoa, seven galleys from the Papal States, five galleys from the Order of Saint Stephen and the Grand Duchy of Tuscany, three galleys from the Duchy of Savoy, three galleys from the Knights of Malta and some private ships. John of Austria, half-brother of Philip II of Spain, was named by Pope Pius V as overall commander of the fleet and led the centre division along with Papal captain Marcantonio Colonna and the Venetian Sebastiano Venier; the wings were commanded by the Venetian Agostino Barbarigo and the Genoese Gianandrea Doria. The Ottoman fleet consisted of 222 galleys and 56 galliots and was led by Müezzinzade Ali Pasha, Mahomet Sirocco and Occhiali.</p>
+					<p>In the history of naval warfare, Lepanto marks the last major engagement in the Western world to be fought almost entirely between rowing vessels, namely the galleys and galleasses which were the direct descendants of ancient trireme warships. The battle was in essence an "infantry battle on floating platforms". It was the largest naval battle in Western history since classical antiquity, involving more than 450 warships. Over the following decades, the increasing importance of the galleon and the line of battle tactic would displace the galley as the major warship of its era, marking the beginning of the "Age of Sail".</p>
+					<p>The victory of the Holy League is of great importance in the history of Europe and of the Ottoman Empire, with the Ottoman fleet almost completely destroyed and marking the turning-point of Ottoman military expansion into the Mediterranean, although the Ottoman wars in Europe would continue for another century. It has long been compared to the Battle of Salamis, both for tactical parallels and for its crucial importance in the defense of Europe against imperial expansion. It was also of great symbolic importance in a period when Europe was torn by its own wars of religion following the Protestant Reformation. Pope Pius V instituted the feast of Our Lady of Victory, and Philip II of Spain used the victory to strengthen his position as the "Most Catholic King" and defender of Christendom against Muslim incursion. Historian Paul K. Davis writes that
+					
+					<blockquote>More than a military victory, Lepanto was a moral one. For decades, the Ottoman Turks had terrified Europe, and the victories of Suleiman the Magnificent caused Christian Europe serious concern. The defeat at Lepanto further exemplified the rapid deterioration of Ottoman might under Selim II, and Christians rejoiced at this setback for the Ottomans. The mystique of Ottoman power was tarnished significantly by this battle, and Christian Europe was heartened.</blockquote></p>
+				<p><i>Content for the Battle of Lepanto (1571) was sourced from Wikipedia. Read more <a href="https://en.wikipedia.org/wiki/Battle_of_Lepanto" target="_blank">here</a>.</i></p>
+				</div>
+			</div>
+			<div class="button-bar">
+				<button class="button-Previous">Previous</button>
+				<button class="button-Next">Next</button>
+			</div>
+		</div>
+
+     </main>
+  <footer>
+	<div class="primary_footer">
+		<div class="discription">
+			<h2>Rohan Ritter</h2>
+			<p>I am passionate about front-end web development and design, with a strong focus on UX/UI. After completing my Higher Certificate in Information Systems (Software Development) at Eduvos, I am now advancing my education at Stadio.</p>
+			<div class="copyright">
+				&copy;2024 - <strong>Rohan Ritter</strong>
+			</div>
+		</div>
+		<div class="anchors">
+			<h3>Anchors</h3>
+			<a href="./index.html"><strong>Home</strong></a>
+			<a href="./Projects.html"><strong>Projects</strong></a>
+			<a href="./About.html"><strong>About</strong></a>
+			<a href="./Blog.html"><strong>Blog</strong></a>
+			<a href="./Contact.html"><strong>Contact</strong></a>
+		</div>
+		<div class="adress">
+			<h3>Address</h3>
+			<p>South Africa <br>
+				Cape Town <br>
+				Stadio Higher Education: Bellville
+			</p>
+			<h3>Media</h3>
+			<ul>
+				<li><a href="https://github.com/RohanRitter"><img class="social-links" src="images/Icons/github.png" width="40" height="40" alt="Rohan Ritter Github"/></a></li>
+				<li><a href="https://www.linkedin.com/in/rohan-ritter-735377177/"><img class="social-links" src="images/Icons/linkedin.png" width="40" height="40" alt="Rohan Ritter LinkedIn"/></a></li>
+				<li><a href="https://www.facebook.com/rohan.ritter/"><img class="social-links" src="images/Icons/facebook.png" width="40" height="40" alt="Rohan Ritter Facebook"/></a></li>
+				<li><a href="https://www.instagram.com/rohan_ritter/"><img class="social-links" src="images/Icons/instagram.png" width="40" height="40" alt="Rohan Ritter Instagram"/></a></li>
+			</ul>
+		</div>
+	</div>
+  </footer>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			const items = document.querySelectorAll('.content-item');
+			let currentIndex = 0;
+
+			// Show the first item
+			items[currentIndex].classList.add('active');
+
+			// Previous button click event
+			document.querySelector('.button-Previous').addEventListener('click', function() {
+				items[currentIndex].classList.remove('active'); // Hide current item
+				currentIndex = (currentIndex > 0) ? currentIndex - 1 : items.length - 1; // Move to previous item
+				items[currentIndex].classList.add('active'); // Show new current item
+			});
+
+			// Next button click event
+			document.querySelector('.button-Next').addEventListener('click', function() {
+				items[currentIndex].classList.remove('active'); // Hide current item
+				currentIndex = (currentIndex < items.length - 1) ? currentIndex + 1 : 0; // Move to next item
+				items[currentIndex].classList.add('active'); // Show new current item
+			});
+		});
+</script>
+</body>
+</html>

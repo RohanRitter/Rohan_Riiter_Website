@@ -1,94 +1,239 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Font Link -->
-
-    <!-- Bootstrap Link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-
-    <!-- CSS Link -->
-    <link rel="stylesheet" href="./CSS/styles.css">
-    <title>Document</title>
+<meta charset="utf-8">
+<title>About</title>
+<!--	Fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">	
+<link href="styles.css" rel="stylesheet" type="text/css">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-image: url('images/AboutBG.png');
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+		}
+		.container {
+			flex-direction: column;
+		}
+		.download-btn {
+			width: 30%;
+			margin: auto;
+			background-color: #000435;
+			color: white;
+			border-style: none;
+			font-size: 20px;
+			padding: 10px;
+			text-decoration: none;
+			text-align: center;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			
+		}
+		.download-btn:hover {
+			border-style: none;
+			text-decoration: underline;
+			border-radius: 10px;
+		}
+		.skills-table {
+			margin-left: 0px;
+			align-content: space-between;
+    		border-collapse: collapse;
+		}
+		.skills-table th {
+			background-color: #000435;
+			color: white;
+			font-weight: bold;			
+			padding: 12px 0px;
+			letter-spacing: 1px;
+		}
+		.skills-table th, .skills-table td {
+			padding: 8px;
+			text-align: left;
+		}
+		.skills-table tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+		
+/*		Tablets*/
+		@media screen and (min-width: 600px) and (max-width: 1024px) {
+			.content-item {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.content-item img {
+				order: 1;
+				margin-bottom: 10px;
+			}
+			.content-info {
+				order: 2;
+				text-align: center;
+			}
+			.content {
+				width: 100%;
+			}
+			.skills-table {
+				width: 100%;
+			}
+			.download-btn {
+			width: 40%;
+			}
+}
+/*		Mobile Devices*/		
+		@media screen and (max-width: 600px) {
+			.content-item {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.content-item img {
+				order: 1;
+				margin-bottom: 10px;
+			}
+			.content-info {
+				order: 2;
+				text-align: center;
+			}
+			.content {
+				width: 100%;
+			}
+			.skills-table {
+				width: 100%;
+			}
+			.download-btn {
+			width: 40%;
+			}
+		}
+	</style>
 </head>
 <body>
-    <!-- Navbar -->
-    <section>
-        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="./index.html">
-                <img src="./Images/Logo.png" alt="" height="35px">
-                Rohan Ritter</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./projects.html">Project</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./resume.html">Resume</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./about.html">About Me</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </section>
-
-     <!-- Summary -->
-     <section>
-      <div class="pt-4 text-center bg-body-tertiary marble-background">
-        <div class="container py-5">
-          <h1 class="text-body-emphasis mb-3"><ul>About Me</ul></h1>
-          <p class="col-lg-8 mx-auto lead">
-            <b>Graduate Software Developer | Front End Web Developer, UX/IX Designer, Graphics Designer | Full Stack Web Development</b>          
-          </p>
-          <p class="col-lg-8 mx-auto lead">
-            My name is Rohan Ritter and I want to become a Full Stack Web Developer one day.
-            I am a Graduate Software Developer who have a passion for designing websites and creating them using HTML, CSS and JavaScript.          
-          </p>
-          <p class="col-lg-8 mx-auto lead">
-            I am a Front-End Web Developer, UX/UI Designer, and Graphics Designer, with expertise in various design categories. 
-          My passion lies in becoming a proficient Front-End Web Developer, and I am continuously working towards that goal.          
-          </p>
-          <p class="col-lg-8 mx-auto lead">
-            I have successfully completed my studies at Eduvos, earning a Higher Certificate in Information Systems
-           (Software Development) at NQF Level 5. This educational background has equipped me with a strong foundation in
-            software development and programming.          
-          </p>
-          <p class="col-lg-8 mx-auto lead">
-            As a creative individual, I am constantly seeking opportunities to learn and grow. I am highly teachable and dedicated 
-            to my craft, always striving for excellence in everything I do. Collaboration is key to me, and I thoroughly enjoy working 
-            in teams, as it allows me to leverage collective expertise and troubleshoot challenges for optimal outcomes.         
-          </p>
-          <p class="col-lg-8 mx-auto lead">
-            Currently, I am working as a Freelancer and studying part-time to expand my skill set and become a Full Stack Web Developer,
-           specializing in designing web applications.          
-          </p>
-          <p class="col-lg-8 mx-auto lead">
-            If you are interested in connecting with me, please feel free to reach out. I am excited to collaborate on projects,
-           contribute my skills and create exceptional digital experiences.          
-          </p>
-          <p class="col-lg-8 mx-auto lead">
-            Currently, I am working as a Freelancer and studying part-time to expand my skill set and become a Full Stack Web Developer,
-           specializing in designing web applications.          
-          </p>
-          <br>
-          <p><i>© Rohan Ritter. All rights reserved.</i></p>
-        </div>
+	<header>
+	  <nav class="secondary_header" id="menu">
+		  <ul>
+			<li><a href="./Projects.html">Projects</a></li>
+			<li><a href="./About.html">About</a></li>
+			<li><a href="./Blog.html">Blog</a></li>
+			<li><a href="./Contact.html">Contact</a></li>
+		  </ul>
+	  </nav>
+	<div class="primary_header">
+		  <a href="./index.html" class="center-link"><img class="home-image" src="images/Navbar.png" alt="Home"></a>
+	</div>
+	</header>
+<main class="container">
+  <h1 class="title">About</h1>
+  <div class="content">
+    <div class="content-item">
+      <img src="images/Ships/Tools.png" width="200" height="200" alt="Skills and Tools"/>
+      <div class="content-info">
+        <table class="skills-table" width="130%">
+          <thead>
+            <tr>
+              <th class="tech">Technical Skills</th>
+              <th class="soft">Soft Skills</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Web & Software Development</td>
+              <td>Problem-solving & Critical Thinking</td>
+            </tr>
+            <tr>
+              <td>Graphics & UX/UI Design</td>
+              <td>Teachable & Self-learning</td>
+            </tr>
+            <tr>
+              <td>Illustration & Animation Video</td>
+              <td>Accountability & Time Management</td>
+            </tr>
+            <tr>
+              <td>Photography & Editing</td>
+              <td>Communication</td>
+            </tr>
+            <tr>
+              <td>Videography & Editing</td>
+              <td>Marketing</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
+    </div>
+    <hr>
 
-    </section>
+    <div class="content-item">
+      <img src="images/Ships/Dinghy.png" width="200" height="200" alt="Dinghy"/>
+      <div class="content-info">
+        <h2>Year 1996 - 2010</h2>
+        <p>I was born in Cape Town in 1996 and attended Parow North Primary School until Grade 7 (Standard 5). I pursued sports such as Tennis, Rugby, Hockey, and Angling. I received awards like Junior Angling Champion and, in 2010, the Trophy for Gallantry.</p>
+      </div>
+    </div>
+    <hr>
+
+    <div class="content-item">
+      <img src="images/Ships/Sail Boat.png" width="200" height="200" alt="Sailboat"/>
+      <div class="content-info">
+        <h2>Year 2011 - 2015</h2>
+        <p>In 2011, I attended HTS Drostdy where I learned about computers and their growing impact on the world. In 2013, I transferred to Tygerberg High School to pursue a career in computers. This decision led me to discover my love for the arts, where I took an after-school subject in Illustration. I also played hockey and became a first-team player. In 2015, I graduated and earned my Matric Certificate.</p>
+      </div>
+    </div>
+    <hr>
+
+    <div class="content-item">
+      <img src="images/Ships/Warship.png" width="200" height="200" alt="Warship"/>
+      <div class="content-info">
+        <h2>Year 2016 - 2020</h2>
+        <p>After finishing school, I took a gap year in 2016 to explore career options while working for Hillsong in production, where I learned Videography, Stage Management, and Sound Engineering. In 2017, I started an Adobe Photoshop course and joined a company called Nich Communications. In 2018, I expanded my skills in Photography, Cruise Ship Photography, and Photo Editing. While preparing for my first job on a cruise ship, I discovered that my disability limited my work options, leading me to reconsider this career path. I decided to work in an office environment and studied for my A+ in CompTIA to become an IT Technician. I worked for Incredible Connection until the COVID-19 pandemic began.</p>
+      </div>
+    </div>
+    <hr>
+
+    <div class="content-item">
+      <img src="images/Ships/Galleon.png" width="200" height="200" alt="Galleon"/>
+      <div class="content-info">
+        <h2>Year 2021 - 2024</h2>
+        <p>During the pandemic, I realized that software development would be a more secure career choice, as my disability would not affect my work, even in a world shutdown. In 2021, I enrolled at Eduvos to study for an MLM in Software Development, where I learned languages like Java, C#, SQL, and Android. After graduating in 2022, I worked for companies like Jumping Fox Software, Jonker Voster Attorneys, and DevSavvy, helping them with marketing and hoping for a development role. In 2023, realizing they would not promote me, I joined another company in Cape Town where I developed websites, particularly for GIS. In 2024, I received a sponsorship to further my studies, and I am currently pursuing a Bachelor's degree in Web Design and Development at Stadio. My skills now include HTML, CSS, JavaScript, Java, Adobe Illustrator, InDesign, Photoshop, Dreamweaver, and Animate.</p>
+      </div>
+    </div>
+
+    <a href="Documents/RohanRitter_CV.pdf" class="download-btn" download="Rohan_Ritter_CV.pdf">Download CV</a>
+  </div>
+</main>
+  <footer>
+	<div class="primary_footer">
+		<div class="discription">
+			<h2>Rohan Ritter</h2>
+			<p>I am passionate about front-end web development and design, with a strong focus on UX/UI. After completing my Higher Certificate in Information Systems (Software Development) at Eduvos, I am now advancing my education at Stadio.</p>
+			<div class="copyright">
+				&copy;2024 - <strong>Rohan Ritter</strong>
+			</div>
+		</div>
+		<div class="anchors">
+			<h3>Anchors</h3>
+			<a href="./index.html"><strong>Home</strong></a>
+			<a href="./Projects.html"><strong>Projects</strong></a>
+			<a href="./About.html"><strong>About</strong></a>
+			<a href="./Blog.html"><strong>Blog</strong></a>
+			<a href="./Contact.html"><strong>Contact</strong></a>
+		</div>
+		<div class="adress">
+			<h3>Address</h3>
+			<p>South Africa <br>
+				Cape Town <br>
+				Stadio Higher Education: Bellville
+			</p>
+			<h3>Media</h3>
+			<ul>
+				<li><a href="https://github.com/RohanRitter"><img class="social-links" src="images/Icons/github.png" width="40" height="40" alt="Rohan Ritter Github"/></a></li>
+				<li><a href="https://www.linkedin.com/in/rohan-ritter-735377177/"><img class="social-links" src="images/Icons/linkedin.png" width="40" height="40" alt="Rohan Ritter LinkedIn"/></a></li>
+				<li><a href="https://www.facebook.com/rohan.ritter/"><img class="social-links" src="images/Icons/facebook.png" width="40" height="40" alt="Rohan Ritter Facebook"/></a></li>
+				<li><a href="https://www.instagram.com/rohan_ritter/"><img class="social-links" src="images/Icons/instagram.png" width="40" height="40" alt="Rohan Ritter Instagram"/></a></li>
+			</ul>
+		</div>
+	</div>
+  </footer>
 </body>
 </html>

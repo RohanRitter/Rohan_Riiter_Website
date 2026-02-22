@@ -1,228 +1,187 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap Link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<meta charset="utf-8">
+<title>Projects</title>
+<!--	Fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link href="styles.css" rel="stylesheet" type="text/css">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-image: url('images/ProjectsBG.png');
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+		}
+		.container {
+			flex-direction: column;
+			align-items: center;
+			width: 100%
+		}
+				/*
+		.title {
+    		position: absolute;
+    		top: 220px;
+			margin: auto;
+    		z-index: 10;
+    		pointer-events: none;
+		}
+*/
 
-    <!-- CSS Link -->
-    <link rel="stylesheet" href="./CSS/styles.css">
-    <title>Document</title>
+		.map {
+			margin: auto;
+			width: 100%;
+			display: none;
+		}
+		.content {
+			width: 60%; 
+		}
+		.content-item img {
+			border-radius: 10px;
+		}
+/*		Tablets*/
+		@media screen and (min-width: 600px) and (max-width: 1024px) {
+			.content-item {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.content-item img {
+				order: 1;
+				margin-bottom: 10px;
+			}
+			.content-info {
+				order: 2;
+				text-align: center;
+			}
+			.content {
+				width: 90%;
+			}
+		}
+/*		Mobile Devices*/
+		@media screen and (max-width: 600px) {
+			.content-item {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.content-item img {
+				order: 1;
+				margin-bottom: 10px;
+			}
+			.content-info {
+				order: 2;
+				text-align: center;
+			}
+			.content {
+				width: 90%;
+			}
+		}
+	</style>
 </head>
 <body>
-    <!-- Navbar -->
-    <section>
-        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="./index.html">
-                <img src="./Images/Logo.png" alt="" height="35px">
-                Rohan Ritter</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./projects.html">Project</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./resume.html">Resume</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./about.html">About Me</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </section>
-
-    <!-- Heading -->
-    <div class="text-center bg-body-tertiary marble-background ">
-      <div class="container py-2"> 
-        <h1 class="text-body-emphasis my-5 text-center">Projects</h1>
-
-<!-- Bigger Projects Carousel -->
-    <section>
-        <h2 class="text-body-emphasis py-1 text-center">Big Projects</h2>
-      <div id="carouselMain" class="carousel slide" data-bs-ride="carousel" data-bs-theme="light">
-
-        <div class="carousel-inner">
-          <!-- Dine'sty -->
-          <div class="carousel-item active">
-            <img src="./Projects/Dine'sty/Dine'sty Carousel.jpg" class="d-block w-100" alt="...">
-            <div class="container">
-              <div class="carousel-caption">
-                <p><a class="btn btn-lg btn-outline-dark ms-5 carousel-button" href="./Projects/Dine'sty/DWindex.html">View</a></p>
-              </div>
-            </div>
-          </div>
-
-           <!-- RRWebsite -->
-          <div class="carousel-item">
-            <img src="./Projects/RRWebsite/RRWebsite Carousel.jpg" class="d-block w-100" alt="...">
-            <div class="container">
-              <div class="carousel-caption">
-                <p><a class="btn btn-lg btn-outline-light ms-5 carousel-button" href="./Projects/Who Wins/whoWinsindex.html">View</a></p>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </section>
-
-
-
-
-
-
- <!-- Smaller Projects Carousel -->
-    <section>  
-        <h2 class="text-body-emphasis text-center py-1"><ul>Other Projects</ul></h2>
-      <div id="carouselotherprojects" class="carousel slide" data-bs-ride="carousel" data-bs-touch="false">
-        
-        <div class="carousel-inner">
-
-          <!-- Simon Game -->
-          <div class="carousel-item active" data-bs-interval="1000">
-            <img src="./Projects/SimonGame/Simon Game Carousel.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption">
-              <p><a class="btn btn-lg btn-outline-light ms-5 carousel-button" href="./Projects/SimonGame/simonGameIndex.html">View</a></p>
-            </div>
-          </div>
-          
-          <!-- Who Wins -->
-          <div class="carousel-item">
-            <img src="./Projects/Who Wins/Who Wins Carousel.jpg" class="d-block w-100" alt="...">
-            <div class="container">
-              <div class="carousel-caption">
-                <p><a class="btn btn-lg btn-outline-light ms-5 carousel-button" href="./Projects/Who Wins/whoWinsindex.html">View</a></p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Music maker -->
-          <div class="carousel-item">
-            <img src="./Projects/Music maker/Music Maker Carousel.jpg" class="d-block w-100" alt="...">
-            <div class="container">
-              <div class="carousel-caption">
-                <p><a class="btn btn-lg btn-outline-light ms-5 carousel-button" href="./Projects/Music maker/MusicMakerIndex.html">View</a></p>
-              </div>
-            </div>
-          </div>
-
-          <!-- TinDog Site -->
-          <div class="carousel-item">
-            <img src="./Projects/TinDog/Tindog Carousel.png" class="d-block w-100" alt="...">
-            <div class="container">
-              <div class="carousel-caption">
-                <p><a class="btn btn-lg btn-outline-dark ms-5 carousel-button" href="./Projects/TinDog/TDindex.html">View</a></p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselotherprojects" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselotherprojects" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-  </section>
-
- <!-- Designs, Photos and Art -->
- <section>  
-  <h2 class="text-body-emphasis text-center py-1"><ul>Art Projects</ul></h2>
-<div id="carouselartprojects" class="carousel slide" data-bs-ride="carousel" data-bs-touch="false">
+	<header>
+	  <nav class="secondary_header" id="menu">
+		  <ul>
+			<li><a href="./Projects.html">Projects</a></li>
+			<li><a href="./About.html">About</a></li>
+			<li><a href="./Blog.html">Blog</a></li>
+			<li><a href="./Contact.html">Contact</a></li>
+		  </ul>
+	  </nav>
+	<div class="primary_header">
+		  <a href="./index.html" class="center-link"><img class="home-image" src="images/Navbar.png" alt="Home"></a>
+	</div>
+	</header>
+<main class="container">
+  <h1 class="title">Projects</h1>
+<!--
+	      <div class="map">
+      <img class="seicheia" src="images/Seicheia.png" width="100%" height="auto" alt="Map of Projects" usemap="#projects-map">
+      <map name="projects-map">
+        <area shape="rect" coords="300,300,300,200" href="#dinasty" alt="Dynasty" title="Dynasty" />
+        <area shape="rect" coords="250,100,350,200" href="#cube" alt="Cube" title="Cube" />
+        <area shape="rect" coords="100,250,200,350" href="#gis" alt="GIS" title="GIS" />
+        <area shape="rect" coords="250,250,350,350" href="#minigames" alt="Mini Games" title="Mini Games" />
+      </map>
+    </div>
+-->
   
-  <div class="carousel-inner">
-
-    <!-- Flags Art -->
-    <div class="carousel-item active" data-bs-interval="1000">
-      <img src="./Projects/Flags/Flag Carousel .png" class="d-block w-100" alt="...">
-      <div class="carousel-caption">
-        <p><a class="btn btn-lg btn-outline-light ms-5 carousel-button" href="./Projects/Flags/index.html">View</a></p>
+  <div class="content">
+    <div class="content-item">
+      <img src="images/Projects/Dinesty.png" width="200" height="200" alt="Dynasty Project"/>
+      <div class="content-info">
+        <h2 id="dinasty">Dinesty</h2>
+        <p>A personal website I created to rate our favorite restaurants and wine estates around South Africa. Users can add their favorite foods and drinks for easy access worldwide. Built using HTML, CSS, and JavaScript.</p>
       </div>
     </div>
-    
-    <!-- Mondrian Art -->
-    <div class="carousel-item">
-      <img src="./Projects/MondrianProject/Mondrian Carousel.png" class="d-block w-100" alt="...">
-      <div class="container">
-        <div class="carousel-caption">
-          <p><a class="btn btn-lg btn-outline-dark ms-5 carousel-button" href="./Projects/MondrianProject/mondrian.html">View</a></p>
-        </div>
+    <hr>
+
+    <div class="content-item">
+      <img src="images/Projects/CESSite.png" width="200" height="200" alt="CES Cube Project"/>
+      <div class="content-info">
+        <h2 id="cube">CES Spinning Cube Website</h2>
+        <p>A website created for a company where, as the user scrolls or swipes, a cube spins and unfolds to display the page content. Developed with HTML, CSS, and JavaScript.</p>
       </div>
     </div>
+    <hr>
 
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselartprojects" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselartprojects" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+    <div class="content-item">
+      <img src="images/Projects/CESGIS.png" width="200" height="200" alt="GIS Project"/>
+      <div class="content-info">
+        <h2 id="gis">GIS</h2>
+        <p>A GIS map project for a company I worked for. The map allows users to draw polygons, store them in a database, and retrieve them later for continued work. Additional features include changing the basemap, using Street View, loading GeoJSON files, and more. Built with HTML, CSS, JavaScript, and PostgreSQL. (GeoServer is currently offline due to private hosting fees).</p>
+      </div>
+    </div>
+    <hr>
+
+    <div class="content-item">
+      <img src="images/Projects/Games.png" width="200" height="200" alt="Mini Games"/>
+      <div class="content-info">
+        <h2 id="minigames">Mini Games</h2>
+        <p>Here are a few small games I created while learning how to code: 
+        - A dice roll game to help decide things like movie choices or voting.
+        - A memory game where users must recall the order of flashing colors.
+        - A drum kit where users can press keyboard keys or buttons to play the drums and make some noise.</p>
+      </div>
+    </div>
+	  </div>
+</main>  
+<footer>
+<div class="primary_footer">
+	<div class="discription">
+		<h2>Rohan Ritter</h2>
+		<p>I am passionate about front-end web development and design, with a strong focus on UX/UI. After completing my Higher Certificate in Information Systems (Software Development) at Eduvos, I am now advancing my education at Stadio.</p>
+		<div class="copyright">
+			&copy;2024 - <strong>Rohan Ritter</strong>
+		</div>
+	</div>
+	<div class="anchors">
+		<h3>Anchors</h3>
+		<a href="./index.html"><strong>Home</strong></a>
+		<a href="./Projects.html"><strong>Projects</strong></a>
+		<a href="./About.html"><strong>About</strong></a>
+		<a href="./Blog.html"><strong>Blog</strong></a>
+		<a href="./Contact.html"><strong>Contact</strong></a>
+	</div>
+	<div class="adress">
+		<h3>Address</h3>
+		<p>South Africa <br>
+			Cape Town <br>
+			Stadio Higher Education: Bellville
+		</p>
+		<h3>Media</h3>
+		<ul>
+			<li><a href="https://github.com/RohanRitter"><img class="social-links" src="images/Icons/github.png" width="40" height="40" alt="Rohan Ritter Github"/></a></li>
+			<li><a href="https://www.linkedin.com/in/rohan-ritter-735377177/"><img class="social-links" src="images/Icons/linkedin.png" width="40" height="40" alt="Rohan Ritter LinkedIn"/></a></li>
+			<li><a href="https://www.facebook.com/rohan.ritter/"><img class="social-links" src="images/Icons/facebook.png" width="40" height="40" alt="Rohan Ritter Facebook"/></a></li>
+			<li><a href="https://www.instagram.com/rohan_ritter/"><img class="social-links" src="images/Icons/instagram.png" width="40" height="40" alt="Rohan Ritter Instagram"/></a></li>
+		</ul>
+	</div>
 </div>
-</section>
-
-  <section>
-    <h2 class="text-body-emphasis text-center py-1">Future Project Ideas</h2>
-    <ul class="list-inline ">
-      <li class="list-item">
-        Restaurant Rating Site (Dine'sty) (Done)
-      </li>
-      <li class="list-item">
-        Pattern Matching (Game)
-      </li>
-      <li class="list-item">
-        Image Generating (App)
-      </li>
-      <li class="list-item">
-        Improve a Random Site
-      </li>
-      <li class="list-item">
-        Recreate a famous site (Wizarding World sorting hat)
-      </li>
-      <li class="list-item">
-        Code Writting online site
-      </li>
-      <li class="list-item">
-        Study Notes Library
-      </li>
-      <li class="list-item">
-        Live Tracking App (Surfing)
-      </li>
-      <li class="list-item">
-        Log in Site (Fun Theme: Harry Potter )
-      </li>
-    </ul>
-  </section>
-
-
-   
-  
-  </div>
-</div>
+</footer>
 </body>
 </html>
